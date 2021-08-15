@@ -11,24 +11,51 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../public/css/style.min.css">
 
+    <script>
+        function mask(o, f) {
+        setTimeout(function() {
+          var v = mphone(o.value);
+          if (v != o.value) {
+            o.value = v;
+          }
+        }, 1);
+    }
+      
+    function mphone(v) {
+        var r = v.replace(/\D/g, "");
+        r = r.replace(/^0/, "");
+        if (r.length > 10) {
+            r = r.replace(/^(\d\d)(\d{5})(\d{4}).*/, "($1) $2-$3");
+        } else if (r.length > 5) {
+            r = r.replace(/^(\d\d)(\d{4})(\d{0,4}).*/, "($1) $2-$3");
+        } else if (r.length > 2) {
+            r = r.replace(/^(\d\d)(\d{0,5})/, "($1) $2");
+        } else {
+            r = r.replace(/^(\d*)/, "($1");
+        }
+        return r;
+    }
+    </script>
+
+
 </head>
 <body>
-    <header>
+    <header id="header">
         <nav>
             <div class="logo"></div>
             <ul class="ul-desktop">
-                <li><a href="">Bem-vindo</a></li>
-                <li><a href="">Quem sou</a></li>
-                <li><a href="">Depoimentos</a></li>
-                <li><a href="">Contato</a></li>
+                <li><a href="#header">Bem-vindo</a></li>
+                <li><a href="#about_me">Quem sou</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
       
         <ul class="ul-mobile">
-            <li><a href="">Bem-vindo</a></li>
-            <li><a href="">Quem sou</a></li>
-            <li><a href="">Depoimentos</a></li>
-            <li><a href="">Contato</a></li>
+            <li><a href="#header">Bem-vindo</a></li>
+            <li><a href="#about_me">Quem sou</a></li>
+            <li><a href="#depoimentos">Depoimentos</a></li>
+            <li><a href="#contato">Contato</a></li>
         </ul>
 
 
@@ -136,7 +163,88 @@
         </div>
     </section>
     
-    <section id="contato"></section>
+    <section id="contato">
+        <div class="contato text_h2">
+            <h2>Contato</h2>
+            <div class="line"></div>
+        </div>
+        
+        <div class="contact_ways">
+            <div class="address_container container">
+                <div class="address_img img">
+                    <img src="assets/images/comprimidas/address.png" alt="">
+                </div>
+                <div class="address_text text">
+                    <p>Rua Dr.Pereira dos Santos, 130, Centro, Itaboraí </p>
+                </div>
+            </div>
+
+            <div class="phone_container container">
+                <div class="phone_img img">
+                    <img src="assets/images/comprimidas/phone.png" alt="">
+                </div>
+                <div class="phone_text text">
+                    <p>(21) 97661-1048</p>
+                </div>
+            </div>
+
+            <div class="email_container container">
+                <div class="email_img img">
+                    <img src="assets/images/comprimidas/mail.png" alt="">
+                </div>
+                <div class="email_text text">
+                    <p>julianalemos.psi@hotmail.com</p>
+                </div>
+            </div>
+            <div class="instagram_container container">
+                <div class="instagram_img img">
+                    <img src="assets/images/comprimidas/instagram.png" alt="">
+                </div>
+                <div class="instagram_text text">
+                    <p>julianalemos.psi </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="form_container">
+            <form action="">
+                <div class="w45">
+                    <input type="text" name="nome" placeholder="Nome" id="nome_input">
+                    <input style="padding-left: 15px;" type="text" value="Sobrenome" placeholder="sobrenome" id="sobrenome_input">
+                </div>
+
+                <div class="w90">
+                    <input type="text"  placeholder="E-mail" id="email" name="email">
+                </div>
+
+                <div class="w90">
+                    <input type="text" name="telefone" id="telefone_input" placeholder="Telefone" onkeypress="mask(this, mphone);" onblur="mask(this, mphone);">
+
+                </div>
+
+                <div class="w90">
+                    <textarea  placeholder="Mensagem" id="message_id" cols="30" rows="10"></textarea>
+                </div>
+
+                <div class="w90">
+                    <input type="submit" name="enviar "placeholder="" id="submit_btn">
+                </div>
+            </form>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="footer_logo">
+            <img src="assets/images/logo.png" alt="">
+        </div>
+        <div class="crp">
+            <p>CRP 05/64880</p>
+        </div>
+    </footer>
+    <section id="sub_footer">
+        <span>feito com carinho por <a href="">@aurora_____design</a>&copy;</span>
+    </section>
 
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/main.js"></script>

@@ -8,6 +8,10 @@
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     color: $TextBlueColor;
+    resize: none;
+    outline: none;
+    border: none;
+    scroll-behavior: smooth;
 }
 h2{
     width: 200px;
@@ -17,14 +21,7 @@ h2{
     margin: 0 auto;
     padding: 0;
     z-index: 3;
-}
-
-.owl-nav{
-    display: none !important;
-}
-
-.owl-dots{
-    margin-top: 20px;
+    text-align: center;
 }
 
 .line{
@@ -34,6 +31,16 @@ h2{
     margin: 0 auto;
     margin-top: -15px;
 }
+
+
+.owl-nav{
+    display: none !important;
+}
+
+.owl-dots{
+    margin-top: 20px;
+}
+
 
 
 header{
@@ -131,8 +138,12 @@ section#about_me{
 section#aaron{
     width: 100%;
     height: 180px;
-    background: $aaronBG;
-
+    @include BGimage('depoimentosBG.png');
+    background-size: 50% 20%;
+    background-color: $aaronBG;
+    background-position-y:center;
+    background-position-x:left;
+    background-attachment: fixed;
     .container{
         width: 80%;
         max-width: 1300px;
@@ -141,6 +152,7 @@ section#aaron{
         display: flex;
         position: relative;
         .butterfly_container{
+            display: none;
             height: 100%;
             width: 180px;
             position: relative;
@@ -182,6 +194,7 @@ section#aaron{
     }
 }
 
+
 section#depoimentos{
     width: 100%;
     height: 80vh;
@@ -197,12 +210,12 @@ section#depoimentos{
     }
  
     .container{
-        
         height: 100%;
         position: relative;
         .butterfly{
             height: 200px;
-            width: 330px;
+            width: 320px;
+            position: fixed;
             @include BGimage('butterfy.png');
             position: absolute;
             @include translateY;
@@ -231,3 +244,159 @@ section#depoimentos{
     }
 }
 
+::placeholder{
+    color: $TextBlueColor;
+}
+
+input[type=text], textarea{
+    padding-left: 15px;
+}
+input:focus, textarea:focus{
+    border-left: 3px solid $TextBlueColor;
+}
+textarea, textarea::placeholder{
+    color: $TextBlueColor;
+    padding-top: 10px;
+    
+}
+section#contato{
+    background-color: $contactBG;
+    height: 1100px;
+    .text_h2{
+        position: relative;
+        top: 30px;
+        h2{
+            width: 140px;
+            background-color: $contactBG;
+        }
+        .line{
+            width: 240px;
+        }
+    }
+
+    .contact_ways{
+        width: 90%;
+        max-width: 600px;
+        min-width: 300px;
+        height: 500px;
+        margin: 0 auto;
+        margin-top: 80px;
+        @include flexCenter(column);
+        justify-content: space-around;
+
+        .container{
+            width: 95%;
+            height: 30%;
+            .img{
+                height: 60px;
+                width: 60px;
+                border-radius: 50%;
+                background-color: #fff;
+                margin: 0 auto;
+                @include flexCenter(row);
+                img{
+                    width: 90%;
+                    height: 90%;
+                }
+            }
+
+            .text{
+                width: 250px;
+                text-align: center;
+                margin: 0 auto;
+                margin-top: 5px;
+            }
+        }
+    }
+
+    .form_container{
+        min-width: 320px;
+        max-width: 450px;
+        width: 90%;
+        height: 400px;
+        background-color: rgb(194, 194, 194);
+        margin: 0 auto;
+        padding: 20px;
+        padding-bottom: 50px;
+        margin-top: 50px;
+        .w90, .w45{ 
+            width: 90%;
+            height: 35px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+        .w90{
+            input{
+                width: 100%;
+                height: 100%
+            };
+            textarea{
+                height: 100px;
+                width: 100%;
+            }
+        }
+        .w45{
+            display: flex;
+            justify-content: space-between;
+            input{
+                width: 45%;
+                height: 100%;
+            }
+        }
+        .w90:last-of-type{
+            margin-top: 95px;
+            
+            input{
+                background-color: $cyan;
+                border: 1px solid $TextBlueColor;
+                margin-bottom: 0;
+            }
+        }
+
+    }
+}
+.instagram_img img{
+    width: 40px !important;
+    height: 40px !important;
+}
+
+footer{
+    width: 100%;
+    height: 120px;
+    background-color: $cyan;
+
+
+    .footer_logo{
+        height: 100px;
+        width: 150px;
+        margin: 0 auto;
+        position: relative;
+        img{
+            height: 100%;
+            width: 100%;
+        }
+        
+    }
+
+    .crp{
+        margin: 0 auto;
+        height: 20px;
+        width: 100%;
+        text-align: center;
+        font-size: 12px;
+    }
+}
+
+section#sub_footer{
+    background-color: $TextBlueColor;
+    text-align: center;
+    font-size: 12px;
+    span{
+        color: #fff;
+        a{
+            color: white;
+        }
+    }
+    
+    
+}
