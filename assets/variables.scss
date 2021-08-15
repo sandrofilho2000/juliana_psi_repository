@@ -1,0 +1,30 @@
+$cyan: #D5ECEF;
+$about_meBG: #F8F8F8;
+$aaronBG: #F1F1F1;
+$depoimentosBG: #E9E9E9;
+$contactBG: #D6D6D6;
+$TextBlueColor: #4C6E83;
+
+@mixin BGimage($url){
+    background-image: url('images/' + $url);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+@mixin flexCenter($row_column){
+    display: flex;
+    flex-direction: $row_column;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin translateY{
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@mixin translateX{
+    left: 50%;
+    transform: translateX(-50%);
+}

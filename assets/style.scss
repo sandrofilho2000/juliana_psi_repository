@@ -1,0 +1,233 @@
+@import 'variables';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: $TextBlueColor;
+}
+h2{
+    width: 200px;
+    font-weight: 300;
+    position: relative;
+    background: $about_meBG;
+    margin: 0 auto;
+    padding: 0;
+    z-index: 3;
+}
+
+.owl-nav{
+    display: none !important;
+}
+
+.owl-dots{
+    margin-top: 20px;
+}
+
+.line{
+    width: 300px;
+    height: 2px;
+    background: $TextBlueColor;
+    margin: 0 auto;
+    margin-top: -15px;
+}
+
+
+header{
+    height: 85vh;
+    width: 100%;
+    background-color: $cyan;
+    position: relative;
+    nav{
+        width: 100%;
+        height: 70px;
+        background-color: #fff;
+        @include flexCenter('row');
+        .logo{
+            height: 70px;
+            width: 140px;
+            @include BGimage('logo.png')
+        }
+        .ul-desktop{
+            display: none;
+        }
+        
+    }
+    .ul-mobile{
+        width: 100%;
+        height: 30px;
+        background: rgb(240, 240, 240);
+        @include flexCenter('row');
+        justify-content: space-around;
+        li{
+            font-size: 11px;
+        }
+    }
+    .central-logo{
+        height: 350px;
+        width: 100%;
+        max-width: 650px;
+        margin-top: 10px;
+        margin: 0 auto;
+        @include flexCenter(column);
+        padding: 0 50px;
+        img{
+            width: 100%;
+            max-width: 350px;
+            height: 150px;
+        }
+        p{
+            text-align: center;
+            font-size: 13px;
+        }
+    }
+    .juh-container{
+        height: 240px;
+        width: 200px;
+        margin: 0 auto;
+        position: absolute;
+        bottom: 0;
+        @include translateX;
+        @include BGimage('juh.png')
+    }
+}
+
+
+section#about_me{
+    height: 90vh;
+    width: 100%;
+    text-align: center;
+    padding-top: 25px;
+    position: relative;
+    background: $about_meBG;
+    
+
+    .juh_pic{
+        height: 300px;
+        width: 300px;
+        margin: 0 auto;
+        margin-top: 40px;
+        border: 2px solid #0000006b;
+        @include BGimage('juh_pic.png');
+        box-shadow: 5px 5px 16px -4px #000000;
+        margin-bottom: 50px;        
+    }
+
+    .about_text{
+        max-width: 380px;
+        width: 80%;
+        margin: 0 auto;
+        p{
+            margin-top: 10px;
+            font-size: 14px;
+        }
+    }
+}
+
+
+section#aaron{
+    width: 100%;
+    height: 180px;
+    background: $aaronBG;
+
+    .container{
+        width: 80%;
+        max-width: 1300px;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        position: relative;
+        .butterfly_container{
+            height: 100%;
+            width: 180px;
+            position: relative;
+            .butterfly{
+                height: 50%;
+                width: 50%;
+                @include BGimage('butterfy.png')
+            }
+
+            .butterfly_1{
+                position: absolute;
+                top: 0;
+            }
+            .butterfly_2{
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+        }
+
+
+        .aaron_quote{
+
+            height: 100%;
+            width: 100%;
+            max-width: 460px;
+            text-align: center;
+            position: absolute;
+            @include translateX;
+            margin-top: 50px;
+            font-size: 14px;
+
+            p:last-of-type{
+                font-weight: bold;
+                text-decoration: underline;
+                margin: 8px;
+            }
+        }
+    }
+}
+
+section#depoimentos{
+    width: 100%;
+    height: 80vh;
+    background-color: $depoimentosBG;
+    .depoimentos_h2{
+        text-align: center;
+        position: relative;
+        top: 25px;
+        h2{
+            background-color: $depoimentosBG;
+        }
+        
+    }
+ 
+    .container{
+        
+        height: 100%;
+        position: relative;
+        .butterfly{
+            height: 200px;
+            width: 330px;
+            @include BGimage('butterfy.png');
+            position: absolute;
+            @include translateY;
+        }
+
+        .depoimentos_wrapper{
+            height: 300px;
+            width: 90%;
+            margin: 0 auto;
+            position: relative;
+            @include translateY;
+
+            .depoimento_single{
+                height: 100%;
+                width: 275px;
+                margin: 0 auto;
+                padding-top: 60px;
+                text-align: center;
+
+                p:last-of-type{
+                    margin-top: 20px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+

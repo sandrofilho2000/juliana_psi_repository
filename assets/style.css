@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  color: #4C6E83;
+}
+
+h2 {
+  width: 200px;
+  font-weight: 300;
+  position: relative;
+  background: #F8F8F8;
+  margin: 0 auto;
+  padding: 0;
+  z-index: 3;
+}
+
+.owl-nav {
+  display: none !important;
+}
+
+.owl-dots {
+  margin-top: 20px;
+}
+
+.line {
+  width: 300px;
+  height: 2px;
+  background: #4C6E83;
+  margin: 0 auto;
+  margin-top: -15px;
+}
+
+header {
+  height: 85vh;
+  width: 100%;
+  background-color: #D5ECEF;
+  position: relative;
+}
+
+header nav {
+  width: 100%;
+  height: 70px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: "row";
+          flex-direction: "row";
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header nav .logo {
+  height: 70px;
+  width: 140px;
+  background-image: url("images/logo.png");
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+header nav .ul-desktop {
+  display: none;
+}
+
+header .ul-mobile {
+  width: 100%;
+  height: 30px;
+  background: #f0f0f0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: "row";
+          flex-direction: "row";
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header .ul-mobile li {
+  font-size: 11px;
+}
+
+header .central-logo {
+  height: 350px;
+  width: 100%;
+  max-width: 650px;
+  margin-top: 10px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 50px;
+}
+
+header .central-logo img {
+  width: 100%;
+  max-width: 350px;
+  height: 150px;
+}
+
+header .central-logo p {
+  text-align: center;
+  font-size: 13px;
+}
+
+header .juh-container {
+  height: 240px;
+  width: 200px;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-image: url("images/juh.png");
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+section#about_me {
+  height: 90vh;
+  width: 100%;
+  text-align: center;
+  padding-top: 25px;
+  position: relative;
+  background: #F8F8F8;
+}
+
+section#about_me .juh_pic {
+  height: 300px;
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 40px;
+  border: 2px solid #0000006b;
+  background-image: url("images/juh_pic.png");
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: 5px 5px 16px -4px #000000;
+          box-shadow: 5px 5px 16px -4px #000000;
+  margin-bottom: 50px;
+}
+
+section#about_me .about_text {
+  max-width: 380px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+section#about_me .about_text p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+section#aaron {
+  width: 100%;
+  height: 180px;
+  background: #F1F1F1;
+}
+
+section#aaron .container {
+  width: 80%;
+  max-width: 1300px;
+  height: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+section#aaron .container .butterfly_container {
+  height: 100%;
+  width: 180px;
+  position: relative;
+}
+
+section#aaron .container .butterfly_container .butterfly {
+  height: 50%;
+  width: 50%;
+  background-image: url("images/butterfy.png");
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+section#aaron .container .butterfly_container .butterfly_1 {
+  position: absolute;
+  top: 0;
+}
+
+section#aaron .container .butterfly_container .butterfly_2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+section#aaron .container .aaron_quote {
+  height: 100%;
+  width: 100%;
+  max-width: 460px;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-top: 50px;
+  font-size: 14px;
+}
+
+section#aaron .container .aaron_quote p:last-of-type {
+  font-weight: bold;
+  text-decoration: underline;
+  margin: 8px;
+}
+
+section#depoimentos {
+  width: 100%;
+  height: 80vh;
+  background-color: #E9E9E9;
+}
+
+section#depoimentos .depoimentos_h2 {
+  text-align: center;
+  position: relative;
+  top: 25px;
+}
+
+section#depoimentos .depoimentos_h2 h2 {
+  background-color: #E9E9E9;
+}
+
+section#depoimentos .container {
+  height: 100%;
+  position: relative;
+}
+
+section#depoimentos .container .butterfly {
+  height: 200px;
+  width: 330px;
+  background-image: url("images/butterfy.png");
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+section#depoimentos .container .depoimentos_wrapper {
+  height: 300px;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+section#depoimentos .container .depoimentos_wrapper .depoimento_single {
+  height: 100%;
+  width: 275px;
+  margin: 0 auto;
+  padding-top: 60px;
+  text-align: center;
+}
+
+section#depoimentos .container .depoimentos_wrapper .depoimento_single p:last-of-type {
+  margin-top: 20px;
+  font-weight: bold;
+}
+/*# sourceMappingURL=style.css.map */
