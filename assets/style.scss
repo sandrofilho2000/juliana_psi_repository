@@ -107,7 +107,7 @@ section#about_me{
     height: 90vh;
     width: 100%;
     text-align: center;
-    padding-top: 25px;
+    padding-top: 26px;
     position: relative;
     background: $about_meBG;
     
@@ -251,14 +251,17 @@ section#depoimentos{
 input[type=text], textarea{
     padding-left: 15px;
 }
+
 input:focus, textarea:focus{
     border-left: 3px solid $TextBlueColor;
 }
+
 textarea, textarea::placeholder{
     color: $TextBlueColor;
     padding-top: 10px;
     
 }
+
 section#contato{
     background-color: $contactBG;
     height: 1100px;
@@ -355,6 +358,7 @@ section#contato{
 
     }
 }
+
 .instagram_img img{
     width: 40px !important;
     height: 40px !important;
