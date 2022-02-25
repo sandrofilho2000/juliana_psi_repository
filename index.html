@@ -62,29 +62,36 @@
 
         <div class="central-logo">
             <img src="assets/images/logo.png" alt="">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis aliquet velit nec posuere. Aenean non sem sodales, condimentum .</p>
+            <p>"A pessoa mais forte não é aquela fazendo mais barulho, mas aquela que consegue, calmamente, dirigir a conversa para a definição e solução dos problemas."</p>
         </div>
 
         <div class="juh-container">
 
         </div>
        
-        
+        <div class="borboletas">
+            <img src="assets/images/borboletas_header.svg" alt="">
+        </div>
     </header>
 
     <section id="about_me">
+        
         <div class="about_h2 text_h2">
             <h2>Quem sou eu?</h2>
             <div class="line"></div>
         </div>
 
-        <div class="juh_pic"></div>
-
-        <div class="about_text text">
-            <h3>Sobre mim</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime dolor doloremque aliquid obcaecati nostrum asperiores illo quis praesentium deserunt odio placeat culpa eum rem, magnam laborum ratione! Magni, adipisci. Mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam 
-            </p>
+        <div class="container">
+            <div class="juh_pic">
+                <img src="assets/images/juh_pic.png" alt="">
+            </div>
+    
+            <div class="about_text text">
+                <h3>Sobre mim</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime dolor doloremque aliquid obcaecati nostrum asperiores illo quis praesentium deserunt odio placeat culpa eum rem, magnam laborum ratione! Magni, adipisci. Mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam 
+                </p>
+            </div>
         </div>
     </section>
 
@@ -169,68 +176,69 @@
             <h2>Contato</h2>
             <div class="line"></div>
         </div>
-        
-        <div class="contact_ways">
-            <div class="address_container container">
-                <div class="address_img img">
-                    <img src="assets/images/comprimidas/address.png" alt="">
+        <div class="container">
+            <div class="contact_ways">
+                <div class="address_container container">
+                    <div class="address_img img">
+                        <ion-icon name="location-outline"></ion-icon>
+                    </div>
+                    <div class="address_text text">
+                        <p>Rua Dr.Pereira dos Santos, 130, Centro, Itaboraí </p>
+                    </div>
                 </div>
-                <div class="address_text text">
-                    <p>Rua Dr.Pereira dos Santos, 130, Centro, Itaboraí </p>
+    
+                <div class="phone_container container">
+                    <div class="phone_img img">
+                        <ion-icon name="call-outline"></ion-icon>
+                    </div>
+                    <div class="phone_text text">
+                        <p>(21) 97661-1048</p>
+                    </div>
+                </div>
+    
+                <div class="email_container container">
+                    <div class="email_img img">
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </div>
+                    <div class="email_text text">
+                        <p>julianalemos.psi@hotmail.com</p>
+                    </div>
+                </div>
+                <div class="instagram_container container">
+                    <div class="instagram_img img">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </div>
+                    <div class="instagram_text text">
+                        <p>@julianalemos.psi </p>
+                    </div>
                 </div>
             </div>
-
-            <div class="phone_container container">
-                <div class="phone_img img">
-                    <img src="assets/images/comprimidas/phone.png" alt="">
-                </div>
-                <div class="phone_text text">
-                    <p>(21) 97661-1048</p>
-                </div>
+    
+            <div class="form_container">
+                <form action="">
+                    <div class="w45">
+                        <input type="text" name="nome" placeholder="Nome" id="nome_input">
+                        <input style="padding-left: 15px;" type="text" value="Sobrenome" placeholder="sobrenome" id="sobrenome_input">
+                    </div>
+    
+                    <div class="w90">
+                        <input type="text"  placeholder="E-mail" id="email" name="email">
+                    </div>
+    
+                    <div class="w90">
+                        <input type="text" name="telefone" id="telefone_input" placeholder="Telefone" onkeypress="mask(this, mphone);" onblur="mask(this, mphone);">
+    
+                    </div>
+    
+                    <div class="w90">
+                        <textarea  placeholder="Mensagem" id="message_id" cols="30" rows="10"></textarea>
+                    </div>
+    
+                    <div class="w90">
+                        <input type="submit" name="enviar "placeholder="" id="submit_btn">
+                    </div>
+                </form>
             </div>
-
-            <div class="email_container container">
-                <div class="email_img img">
-                    <img src="assets/images/comprimidas/mail.png" alt="">
-                </div>
-                <div class="email_text text">
-                    <p>julianalemos.psi@hotmail.com</p>
-                </div>
-            </div>
-            <div class="instagram_container container">
-                <div class="instagram_img img">
-                    <img src="assets/images/comprimidas/instagram.png" alt="">
-                </div>
-                <div class="instagram_text text">
-                    <p>julianalemos.psi </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="form_container">
-            <form action="">
-                <div class="w45">
-                    <input type="text" name="nome" placeholder="Nome" id="nome_input">
-                    <input style="padding-left: 15px;" type="text" value="Sobrenome" placeholder="sobrenome" id="sobrenome_input">
-                </div>
-
-                <div class="w90">
-                    <input type="text"  placeholder="E-mail" id="email" name="email">
-                </div>
-
-                <div class="w90">
-                    <input type="text" name="telefone" id="telefone_input" placeholder="Telefone" onkeypress="mask(this, mphone);" onblur="mask(this, mphone);">
-
-                </div>
-
-                <div class="w90">
-                    <textarea  placeholder="Mensagem" id="message_id" cols="30" rows="10"></textarea>
-                </div>
-
-                <div class="w90">
-                    <input type="submit" name="enviar "placeholder="" id="submit_btn">
-                </div>
-            </form>
         </div>
 
     </section>
@@ -244,11 +252,13 @@
         </div>
     </footer>
     <section id="sub_footer">
-        <span>feito com carinho por <a href="">@aurora_____design</a>&copy;</span>
+        <span>feito com carinho por <a target="_blank" href="https://sandro-filho-dev.web.app/">Sandro Filho DEV</a>&copy;</span>
     </section>
 
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>
