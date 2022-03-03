@@ -42,7 +42,7 @@ h2 {
 }
 
 header {
-  min-height: 600px;
+  min-height: 730px;
   width: 100%;
   background-color: #D5ECEF;
   position: relative;
@@ -167,7 +167,7 @@ header .juh-container {
   background-repeat: no-repeat;
 }
 
-header .borboletas {
+header .borboletas, header .borboletas2 {
   height: 220px;
   width: 200px;
   position: absolute;
@@ -177,14 +177,23 @@ header .borboletas {
   z-index: 0;
 }
 
-header .borboletas img {
+header .borboletas img, header .borboletas2 img {
   height: 100%;
   margin: 0 auto;
 }
 
+header .borboletas.borboletas2, header .borboletas2.borboletas2 {
+  display: none;
+  left: 5px;
+  top: 155px;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  top: 100px;
+}
+
 section#about_me {
   height: 75vh;
-  min-height: 820px;
+  min-height: 720px;
   width: 100%;
   text-align: center;
   padding-top: 26px;
@@ -203,6 +212,11 @@ section#about_me {
   padding: 54px 0;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
+}
+
+section#about_me .about_h2 {
+  position: relative;
+  top: -45px;
 }
 
 section#about_me .juh_pic {
@@ -673,6 +687,11 @@ section#sub_footer span a {
   header .ul-mobile li {
     padding: 0 5%;
   }
+  .borboletas2 {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
   section#contato {
     height: auto;
   }
@@ -723,9 +742,16 @@ section#sub_footer span a {
     margin-top: 0px;
   }
   section#about_me {
-    height: 700px;
+    height: 470px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     min-height: 0 !important;
     max-height: 700px !important;
+  }
+  section#about_me .about_h2 {
+    position: unset;
+    top: 0px;
   }
   section#about_me .container {
     width: 95%;
@@ -749,6 +775,9 @@ section#sub_footer span a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  section#aaron {
+    background-size: 100% 15%;
   }
 }
 /*# sourceMappingURL=style.css.map */

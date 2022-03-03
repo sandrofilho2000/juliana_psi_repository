@@ -43,7 +43,7 @@ h2{
 
 
 header{
-    min-height: 600px;
+    min-height: 730px;
     width: 100%;
     background-color: $cyan;
     position: relative;
@@ -113,7 +113,7 @@ header{
         @include BGimage('juh.png');
         
     }
-    .borboletas{
+    .borboletas, .borboletas2{
         height: 220px;
         width: 200px;
         position: absolute;
@@ -125,13 +125,21 @@ header{
             height: 100%;
             margin: 0 auto;
         }
+
+        &.borboletas2{
+            display: none;
+            left: 5px;
+            top: 155px;
+            transform: scaleX(-1);
+            top: 100px;
+        }
     }
 }
 
 
 section#about_me{
     height: 75vh;
-    min-height: 820px;
+    min-height: 720px;
     width: 100%;
     text-align: center;
     padding-top: 26px;
@@ -143,6 +151,10 @@ section#about_me{
     padding: 54px 0;
     box-sizing: content-box;
     
+    .about_h2{
+        position: relative;
+        top: -45px;
+    }
 
     .juh_pic{
         height: auto;
@@ -488,6 +500,9 @@ section#sub_footer{
     header .ul-mobile li{
         padding: 0 5%;
     }
+    .borboletas2{
+        display: flex !important;
+    }
     
     section#contato{
         height: auto;
@@ -528,21 +543,30 @@ section#sub_footer{
     }
 
     section#about_me{
-        height: 700px;
+        height: 470px;
+        justify-content: space-between;
         min-height: 0 !important;
         max-height: 700px !important;
+        .about_h2{
+            position: unset ;
+            top: 0px ;
+        }
         .container{
             width: 95%;
             max-width: 900px;
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
-
+            
             .about_text {
                 display: flex;
                 justify-content: center;
                 flex-direction: column;
             }
         }
+    }
+
+    section#aaron{
+        background-size: 100% 15%;
     }
 }
