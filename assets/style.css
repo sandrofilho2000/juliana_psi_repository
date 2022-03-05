@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;700&family=Lato:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -323,12 +324,8 @@ section#aaron .container .aaron_quote p:last-of-type {
 
 section#benificios {
   width: 100%;
-  height: 400px;
-  padding-top: 40px;
-  background-color: white;
-}
-
-section#benificios .text_h2 h2 {
+  height: 365px;
+  padding-top: 21px;
   background-color: white;
 }
 
@@ -339,13 +336,24 @@ section#benificios .beneficios_block {
   line-height: 35px;
   height: 300px;
   margin: 0 auto;
-  margin-top: 40px;
 }
 
 section#benificios .beneficios_block p {
   width: 100%;
   display: block;
   text-align: center;
+}
+
+section#benificios .beneficios_block ul {
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+section#benificios .beneficios_block ul li {
+  list-style-type: disc;
+  height: 50px;
+  white-space: nowrap;
 }
 
 section#depoimentos {
@@ -663,6 +671,7 @@ section#sub_footer span {
 }
 
 section#sub_footer span a {
+  font-family: 'poppins';
   color: white;
 }
 
